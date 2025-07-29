@@ -1,4 +1,8 @@
-# 💫 HI 👋, I'M NOOR-404
+<p align="center">
+  <a href="https://www.facebook.com/mdshahmakhdum.shajon">
+    <img width="65%" alt="Hello, I'm SHAJON. I love coding :)" src="https://raw.githubusercontent.com/SHAJON-404/SHAJON-404/refs/heads/main/assests/SHAJON.png" />
+  </a>
+</p>
 
 ## 🌐 Socials:
 [![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.gg/https://discord.gg/8k9R7Bv4) [![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white)](https://facebook.com/https://www.facebook.com/WHO.IS.NOOR) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/https://www.instagram.com/_n_o_o_r_4_0_4_) [![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/https://x.com/_n_o_o_r_4_0_4_) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:daniyaln.hossai@gmail.com) 
