@@ -47,11 +47,3 @@
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=NOOR-404&theme=radical&no-frame=false&no-bg=true&margin-w=4" />
 </p>
-
----
-
-<div align="center">
-  <img src="https://visitcount.itsvg.in/api?id=NOOR-404&icon=0&color=0" alt="Visitor Count" />
-  <br>
-  <b>Developed with ❤️ by <a href="https://github.com/NOOR-404">NOOR-404</a></b>
-</div>
