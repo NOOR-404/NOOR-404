@@ -2,9 +2,15 @@
 
 <img src="https://vht.folder.jp/column/char_img/banner_blue.png" width="100%" />
 
-<h1>🔵 Hey, I'm Daniyal Hossain Noor (NOOR-404)</h1>
+<br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=25&pause=1000&color=00D1FF&center=true&vCenter=true&width=800&lines=>>+Python+Automation+Architect;>>+APK+Reverse+Engineer;>>+Full-Stack+Web+Developer;>>+Building+Intelligent+Scripts." alt="Typing SVG" />
+<h1>
+  Hey, I'm <br/> 
+  <span style="color: #00D1FF;">Daniyal Hossain Noor</span> <br/>
+  (NOOR-404)
+</h1>
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&pause=1000&color=00D1FF&center=true&vCenter=true&width=800&lines=>>+Python+Automation+Architect;>>+APK+Reverse+Engineer;>>+Full-Stack+Web+Developer;>>+Building+Intelligent+Scripts." alt="Typing SVG" />
 
 <p align="center">
   <img src="https://img.shields.io/badge/Security-Level_404-red?style=for-the-badge&logo=spyderide&logoColor=white" />
@@ -17,7 +23,7 @@
 ---
 
 ## ⚡ CORE_IDENTITY (ABOUT)
-I am a **Technical Solutions Architect** specializing in Python-driven ecosystems. Under the brand **NOOR-404**, I develop tools that focus on automation, efficiency, and security bypassing. My work bridges the gap between complex backend logic and seamless user experience.
+I am a **Technical Solutions Architect** specializing in Python-driven ecosystems. Under the brand **NOOR-404**, I develop tools that focus on automation, efficiency, and security bypassing.
 
 - 🛠️ **Current Focus:** High-speed Automation & Enterprise Dashboard development.
 - 🔬 **Cyber Lab:** Android Reverse Engineering (SSL Unpinning, `.so` Patching).
@@ -46,8 +52,8 @@ I am a **Technical Solutions Architect** specializing in Python-driven ecosystem
 | SECTOR | SPECIALIZATION & CAPABILITIES |
 | :--- | :--- |
 | 🤖 **Automation** | Multi-threaded scrapers, FB Session Managers, and Custom task bots. |
-| 🔍 **Rev-Engineering** | Decompiling Smali, Patching native libraries, and Frida runtime analysis. |
-| 🌐 **Backend Systems** | Robust Flask APIs, real-time logging systems, and Automation panels. |
+| 🔍 **Rev-Engineering** | Decompiling Smali, Patching native libraries, and Frida analysis. |
+| 🌐 **Backend Systems** | Robust Flask APIs, real-time logging, and Automation panels. |
 | 🛡️ **Security Tools** | Scripting for SSL Unpinning bypass and code deobfuscation. |
 
 ---
