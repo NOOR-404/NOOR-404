@@ -1,59 +1,71 @@
 <div align="center">
-<h1>
-  Hey, I'm <br/> 
-  <span style="color: #00D1FF;">Daniyal Hossain Noor</span> <br/>
-  (NOOR-404)
-</h1>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&pause=1000&color=00D1FF&center=true&vCenter=true&width=800&lines=>>+Python+Automation+Architect;>>+APK+Reverse+Engineer;>>+Full-Stack+Web+Developer;>>+Building+Intelligent+Scripts." alt="Typing SVG" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=00d1ff&height=200&section=header&text=NOOR-404&fontSize=70&animation=fadeIn" width="100%" />
+
+<br/>
+
+<table>
+  <tr>
+    <td align="center">
+      <h1>Hey, I'm</h1>
+      <h1 style="color: #00D1FF; font-size: 35px;">Daniyal Hossain Noor</h1>
+      <h3>(NOOR-404)</h3>
+    </td>
+  </tr>
+</table>
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&pause=1000&color=00D1FF&center=true&vCenter=true&width=800&lines=>>+Professional+Python+Developer;>>+Advanced+Automation+Architect;>>+Full-Stack+Web+Developer;>>+Building+Intelligent+Software+Solutions." alt="Typing SVG" />
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Security-Level_404-red?style=for-the-badge&logo=spyderide&logoColor=white" />
-  <img src="https://img.shields.io/badge/Mainframe-Online-00FF00?style=for-the-badge&logo=statuspage&logoColor=white" />
+  <img src="https://img.shields.io/badge/Status-Building_Future-00FF00?style=for-the-badge&logo=statuspage&logoColor=white" />
   <img src="https://img.shields.io/badge/Python-3.13-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Dev_Mode-Active-blue?style=for-the-badge&logo=visualstudiocode&logoColor=white" />
 </p>
 
 </div>
 
 ---
 
-## ⚡ CORE_IDENTITY (ABOUT)
-I am a **Technical Solutions Architect** specializing in Python-driven ecosystems. Under the brand **NOOR-404**, I develop tools that focus on automation, efficiency, and security bypassing.
+## ⚡ SYSTEM_INFO (ABOUT)
+I am a dedicated **Python Developer** and **Automation Specialist** from Bangladesh. Operating under the handle **NOOR-404**, I focus on engineering robust software solutions and seamless web automations. My goal is to transform complex manual workflows into efficient, high-performance digital systems.
 
-- 🛠️ **Current Focus:** High-speed Automation & Enterprise Dashboard development.
-- 🔬 **Cyber Lab:** Android Reverse Engineering (SSL Unpinning, `.so` Patching).
-- ⚙️ **Key Expertise:** Web Automation (Requests, Selenium), Flask, and Security Research.
-- 🎓 **Background:** O Levels (Commerce Stream) — Merging technical skills with business logic.
+- 🚀 **Current Focus:** Enterprise-grade automation dashboards and Flask backends.
+- ⚙️ **Key Expertise:** Web Scraping, API Integration, and Task Automation.
+- 💻 **Tech Stack:** Python 3.13, Flask, Selenium, and Requests.
+- 🎓 **Education:** O Levels (Commerce Stream) — Combining business logic with technical execution.
 
 ---
 
-## 🚀 TECHNOLOGICAL_NEBULA (STACK)
+## 🚀 THE_CORE_STACK
 
-### 🐍 PYTHON & AUTOMATION ENGINE
+### 🐍 PYTHON & AUTOMATION
 ![Python](https://img.shields.io/badge/Python_3.13-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
 ![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white)
 ![Requests](https://img.shields.io/badge/Requests-2CA5E0?style=for-the-badge&logo=python&logoColor=white)
+![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=for-the-badge&logo=playwright&logoColor=white)
 
-### 🔬 REVERSE ENGINEERING & SECURITY
-![Android](https://img.shields.io/badge/APK_Reverse-3DDC84?style=for-the-badge&logo=android&logoColor=white)
-![Frida](https://img.shields.io/badge/Frida_Hooking-FF0000?style=for-the-badge&logo=python&logoColor=white)
-![SSL](https://img.shields.io/badge/SSL_Bypass-DC143C?style=for-the-badge&logo=securityscorecard&logoColor=white)
+### 🌐 WEB & BACKEND DEVELOPMENT
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JS](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
 ---
 
 ## ⚙️ OPERATIONAL_CAPACITY
 
-| SECTOR | SPECIALIZATION & CAPABILITIES |
+| DEPARTMENT | SPECIALIZATION & CAPABILITIES |
 | :--- | :--- |
-| 🤖 **Automation** | Multi-threaded scrapers, FB Session Managers, and Custom task bots. |
-| 🔍 **Rev-Engineering** | Decompiling Smali, Patching native libraries, and Frida analysis. |
-| 🌐 **Backend Systems** | Robust Flask APIs, real-time logging, and Automation panels. |
-| 🛡️ **Security Tools** | Scripting for SSL Unpinning bypass and code deobfuscation. |
+| 🤖 **Automation** | Multi-threaded data scrapers, account management bots, and task schedulers. |
+| 🖥️ **Software Dev** | Creating efficient Python-based desktop tools and automated workflows. |
+| 🌐 **Web Backend** | Building scalable REST APIs and management panels using Flask. |
+| 📊 **Data Handling** | Processing complex JSON/XML data and database management. |
 
 ---
 
-## 📊 ANALYTICS_CENTRAL
+## 📊 PERFORMANCE_ANALYTICS
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=NOOR-404&theme=tokyonight&show_icons=true&count_private=true&hide_border=true&title_color=00D1FF&text_color=ffffff&icon_color=00D1FF" width="48%" />
@@ -62,7 +74,7 @@ I am a **Technical Solutions Architect** specializing in Python-driven ecosystem
 
 ---
 
-## 📈 SYSTEM_ACTIVITY
+## 📈 ACTIVITY_METRICS
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=NOOR-404&theme=react-dark&bg_color=000000&color=00D1FF&line=00D1FF&point=ffffff&area=true&hide_border=true" width="100%" />
 </p>
@@ -82,10 +94,11 @@ I am a **Technical Solutions Architect** specializing in Python-driven ecosystem
 
 <div align="center">
 
-![Profile Views](https://komarev.com/ghpvc/?username=NOOR-404&color=00d1ff&style=flat-square&label=SYSTEM_ACCESS_COUNT)
+![Profile Views](https://komarev.com/ghpvc/?username=NOOR-404&color=00d1ff&style=flat-square&label=SYSTEM_VISITS)
 
 ```python
+# NOOR-404 Execution Loop
 while True:
-    code()
-    innovate()
-    automate()
+    build_software()
+    automate_tasks()
+    deploy_solutions()
