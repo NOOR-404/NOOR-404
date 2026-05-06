@@ -1,5 +1,4 @@
 <div align="center">
-
 <h1>
   Hey, I'm <br/> 
   <span style="color: #00D1FF;">Daniyal Hossain Noor</span> <br/>
