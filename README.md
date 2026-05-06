@@ -1,6 +1,6 @@
 <div align="center">
   <h1>💫 HI, I'M DANIYAL HOSSAIN NOOR</h1>
-  <p><b>Cyber Security Enthusiast | Python Developer | Tech Automator</b></p>
+  <p><b>Python Developer|Software Developer</b></p>
 </div>
 
 <p align="center">
