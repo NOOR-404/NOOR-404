@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=soft&color=00d1ff&height=200&section=header&text=NOOR-404&fontSize=70&fontAlignY=35&animation=fadeIn" />
+<img src="https://capsule-render.vercel.app/api?type=soft&color=00d1ff&height=200&section=header&text=Daniyal Hossain Noor&fontSize=70&fontAlignY=35&animation=fadeIn" />
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=25&pause=1000&color=00D1FF&center=true&vCenter=true&width=800&lines=>>+Python+Automation+Architect;>>+APK+Reverse+Engineer+%2F+Bypasser;>>+Full-Stack+Flask+Developer;>>+Building+Intelligent+Scripts." alt="Typing SVG" />
 
