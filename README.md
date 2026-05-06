@@ -1,9 +1,5 @@
 <div align="center">
 
-<img src="https://vht.folder.jp/column/char_img/banner_blue.png" width="100%" />
-
-<br/>
-
 <h1>
   Hey, I'm <br/> 
   <span style="color: #00D1FF;">Daniyal Hossain Noor</span> <br/>
