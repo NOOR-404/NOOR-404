@@ -2,7 +2,6 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=00d1ff&height=200&section=header&text=NOOR-404&fontSize=70&animation=fadeIn" width="100%" />
 <br/>
-
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&pause=1000&color=00D1FF&center=true&vCenter=true&width=800&lines=>>+Professional+Python+Developer;>>+Advanced+Automation+Architect;>>+Full-Stack+Web+Developer;>>+Building+Intelligent+Software+Solutions." alt="Typing SVG" />
 
 <p align="center">
