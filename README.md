@@ -4,16 +4,6 @@
 
 <br/>
 
-<table>
-  <tr>
-    <td align="center">
-      <h1>Hey, I'm</h1>
-      <h1 style="color: #00D1FF; font-size: 35px;">Daniyal Hossain Noor</h1>
-      <h3>(NOOR-404)</h3>
-    </td>
-  </tr>
-</table>
-
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&pause=1000&color=00D1FF&center=true&vCenter=true&width=800&lines=>>+Professional+Python+Developer;>>+Advanced+Automation+Architect;>>+Full-Stack+Web+Developer;>>+Building+Intelligent+Software+Solutions." alt="Typing SVG" />
 
 <p align="center">
