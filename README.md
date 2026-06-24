@@ -36,9 +36,11 @@ I am a dedicated **Python Developer** and **Automation Specialist** from Banglad
 
 <img src="https://raw.githubusercontent.com/NOOR-404/NOOR-404/refs/heads/main/Assests/Rainbow.gif" width="100%">
 
-## 🚀 THE_CORE_STACK
+![Profile Views](https://komarev.com/ghpvc/?username=NOOR-404&color=00d1ff&style=flat-square&label=SYSTEM_VISITS)
+<img src="https://raw.githubusercontent.com/NOOR-404/NOOR-404/refs/heads/main/Assests/Rainbow.gif" width="100%">
 
-### 🐍 PYTHON & AUTOMATION
+
+## 🚀 THE_CORE_STACK
 ![Python](https://img.shields.io/badge/Python_3.13-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
 ![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white)
