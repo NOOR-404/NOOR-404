@@ -98,18 +98,9 @@ I am a dedicated **Python Developer** and **Automation Specialist** from Banglad
 
 ![Profile Views](https://komarev.com/ghpvc/?username=NOOR-404&color=00d1ff&style=flat-square&label=SYSTEM_VISITS)
 
-🧬 DIGITAL DNA
-
-class NOOR404:
-    def __init__(self):
-        self.alias = "NOOR-404"
-        self.role = "Automation Architect"
-
-    def daily_routine(self):
-        while True:
-            self.build_software()
-            self.automate_tasks()
-            self.deploy_solutions()
-            self.learn_new_things()
-
-NOOR404().daily_routine()
+```python
+# NOOR-404 Execution Loop
+while True:
+    build_software()
+    automate_tasks()
+    deploy_solutions()
