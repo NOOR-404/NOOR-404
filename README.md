@@ -81,7 +81,7 @@ I am a dedicated **Python Developer** and **Automation Specialist** from Banglad
 
 ---
 
-## 📡 SOCIAL MEDIA CONNECTION
+## 📡 SOCIAL CONNECTION
 
 <p align="center"><a href="https://discord.gg/8k9R7Bv4">
 <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white"/>
