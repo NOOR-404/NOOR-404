@@ -35,8 +35,11 @@ I am a dedicated **Python Developer** and **Automation Specialist** from Banglad
 - 🎓 **Education:** O Levels (Commerce Stream) — Combining business logic with technical execution.
 
 <img src="https://raw.githubusercontent.com/NOOR-404/NOOR-404/refs/heads/main/Assests/Rainbow.gif" width="100%">
-
-   ![Profile Views](https://komarev.com/ghpvc/?username=NOOR-404&color=00d1ff&style=flat-square&label=SYSTEM_VISITS)
+</p>
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=NOOR-404&style=flat-square&color=blue"/>
+  <img src="https://komarev.com/ghpvc/?username=NOOR-404&style=flat-square&color=red"/>
+</p>
 <img src="https://raw.githubusercontent.com/NOOR-404/NOOR-404/refs/heads/main/Assests/Rainbow.gif" width="100%">
 
 
