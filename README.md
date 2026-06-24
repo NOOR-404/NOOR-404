@@ -97,10 +97,3 @@ I am a dedicated **Python Developer** and **Automation Specialist** from Banglad
 <div align="center">
 
 ![Profile Views](https://komarev.com/ghpvc/?username=NOOR-404&color=00d1ff&style=flat-square&label=SYSTEM_VISITS)
-
-```python
-# NOOR-404 Execution Loop
-while True:
-    build_software()
-    automate_tasks()
-    deploy_solutions()
