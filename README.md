@@ -81,15 +81,17 @@ I am a dedicated **Python Developer** and **Automation Specialist** from Banglad
 
 ---
 
-## 📡 ESTABLISH_CONNECTION
+## 📡 SOCIAL MEDIA CONNECTION
 
-<div align="center">
-
-| [**DISCORD**](https://discord.gg/8k9R7Bv4) | [**FACEBOOK**](https://www.facebook.com/WHO.IS.NOOR) | [**INSTAGRAM**](https://www.instagram.com/_n_o_o_r_4_0_4_) | [**GMAIL**](mailto:daniyaln.hossai@gmail.com) |
-| :---: | :---: | :---: | :---: |
-
-</div>
-
+<p align="center"><a href="https://discord.gg/8k9R7Bv4">
+<img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white"/>
+</a><a href="https://www.facebook.com/WHO.IS.NOOR">
+<img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white"/>
+</a><a href="https://www.instagram.com/_n_o_o_r_4_0_4_">
+<img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>
+</a><a href="mailto:daniyaln.hossai@gmail.com">
+<img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
+</a></p>
 ---
 
 <div align="center">
