@@ -22,6 +22,10 @@ I am a dedicated **Python Developer** and **Automation Specialist** from Banglad
 - 💻 **Tech Stack:** Python 3.13, Flask, Selenium, and Requests.
 - 🎓 **Education:** O Levels (Commerce Stream) — Combining business logic with technical execution.
 
+<p align="center">
+  <img src="https://github.com/Platane/snk/raw/output/github-contribution-grid-snake.svg" />
+</p>
+
 <img src="https://raw.githubusercontent.com/NOOR-404/NOOR-404/refs/heads/main/Assests/Rainbow.gif" width="100%">
 </p>
 <p align="center">
