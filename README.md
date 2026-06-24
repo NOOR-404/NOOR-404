@@ -24,7 +24,7 @@
 
 </div>
 
----
+<img src="https://raw.githubusercontent.com/NOOR-404/NOOR-404/refs/heads/main/Assests/Rainbow.gif" width="100%">
 
 ## ⚡ SYSTEM_INFO (ABOUT)
 I am a dedicated **Python Developer** and **Automation Specialist** from Bangladesh. Operating under the handle **NOOR-404**, I focus on engineering robust software solutions and seamless web automations. My goal is to transform complex manual workflows into efficient, high-performance digital systems.
@@ -34,7 +34,7 @@ I am a dedicated **Python Developer** and **Automation Specialist** from Banglad
 - 💻 **Tech Stack:** Python 3.13, Flask, Selenium, and Requests.
 - 🎓 **Education:** O Levels (Commerce Stream) — Combining business logic with technical execution.
 
----
+<img src="https://raw.githubusercontent.com/NOOR-404/NOOR-404/refs/heads/main/Assests/Rainbow.gif" width="100%">
 
 ## 🚀 THE_CORE_STACK
 
@@ -52,7 +52,7 @@ I am a dedicated **Python Developer** and **Automation Specialist** from Banglad
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
----
+<img src="https://raw.githubusercontent.com/NOOR-404/NOOR-404/refs/heads/main/Assests/Rainbow.gif" width="100%">
 
 ## ⚙️ OPERATIONAL_CAPACITY
 
@@ -63,7 +63,7 @@ I am a dedicated **Python Developer** and **Automation Specialist** from Banglad
 | 🌐 **Web Backend** | Building scalable REST APIs and management panels using Flask. |
 | 📊 **Data Handling** | Processing complex JSON/XML data and database management. |
 
----
+<img src="https://raw.githubusercontent.com/NOOR-404/NOOR-404/refs/heads/main/Assests/Rainbow.gif" width="100%">
 
 ## 📊 PERFORMANCE_ANALYTICS
 
@@ -72,14 +72,14 @@ I am a dedicated **Python Developer** and **Automation Specialist** from Banglad
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=NOOR-404&theme=tokyonight&hide_border=true&stroke=00D1FF&ring=00D1FF&fire=00D1FF" width="48%" />
 </div>
 
----
+<img src="https://raw.githubusercontent.com/NOOR-404/NOOR-404/refs/heads/main/Assests/Rainbow.gif" width="100%">
 
 ## 📈 ACTIVITY_METRICS
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=NOOR-404&theme=react-dark&bg_color=000000&color=00D1FF&line=00D1FF&point=ffffff&area=true&hide_border=true" width="100%" />
 </p>
 
----
+<img src="https://raw.githubusercontent.com/NOOR-404/NOOR-404/refs/heads/main/Assests/Rainbow.gif" width="100%">
 
 ## 📡 SOCIAL CONNECTION
 
@@ -92,15 +92,24 @@ I am a dedicated **Python Developer** and **Automation Specialist** from Banglad
 </a><a href="mailto:daniyaln.hossai@gmail.com">
 <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
 </a></p>
----
+<img src="https://raw.githubusercontent.com/NOOR-404/NOOR-404/refs/heads/main/Assests/Rainbow.gif" width="100%">
 
 <div align="center">
 
 ![Profile Views](https://komarev.com/ghpvc/?username=NOOR-404&color=00d1ff&style=flat-square&label=SYSTEM_VISITS)
 
-```python
-# NOOR-404 Execution Loop
-while True:
-    build_software()
-    automate_tasks()
-    deploy_solutions()
+🧬 DIGITAL DNA
+
+class NOOR404:
+    def __init__(self):
+        self.alias = "NOOR-404"
+        self.role = "Automation Architect"
+
+    def daily_routine(self):
+        while True:
+            self.build_software()
+            self.automate_tasks()
+            self.deploy_solutions()
+            self.learn_new_things()
+
+NOOR404().daily_routine()
