@@ -6,7 +6,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Building_Future-00FF00?style=for-the-badge&logo=statuspage&logoColor=white" />
-  <img src="https://img.shields.io/badge/Python-3.13-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-3.14-3776AB?style=for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/Dev_Mode-Active-blue?style=for-the-badge&logo=visualstudiocode&logoColor=white" />
 </p>
 
@@ -19,7 +19,7 @@ I am a dedicated **Python Developer** and **Automation Specialist** from Banglad
 
 - 🚀 **Current Focus:** Enterprise-grade automation dashboards and Flask backends.
 - ⚙️ **Key Expertise:** Web Scraping, API Integration, and Task Automation.
-- 💻 **Tech Stack:** Python 3.13, Flask, Selenium, and Requests.
+- 💻 **Tech Stack:** Python 3.14, Flask, Selenium, and Requests.
 - 🎓 **Education:** O Levels (Commerce Stream) — Combining business logic with technical execution.
 
 <p align="center">
