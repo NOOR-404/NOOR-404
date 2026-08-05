@@ -20,7 +20,6 @@ I am a dedicated **Python Developer** and **Automation Specialist** from Banglad
 - 🚀 **Current Focus:** Enterprise-grade automation dashboards and Flask backends.
 - ⚙️ **Key Expertise:** Web Scraping, API Integration, and Task Automation.
 - 💻 **Tech Stack:** Python 3.14, Flask, Selenium, and Requests.
-- 🎓 **Education:** O Levels (Commerce Stream) — Combining business logic with technical execution.
 
 <p align="center">
   <img src="https://github.com/Platane/snk/raw/output/github-contribution-grid-snake.svg" />
