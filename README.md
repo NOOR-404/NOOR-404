@@ -26,11 +26,15 @@ I am a dedicated **Python Developer** and **Automation Specialist** from Banglad
 </p>
 
 <img src="https://raw.githubusercontent.com/NOOR-404/NOOR-404/refs/heads/main/Assests/Rainbow.gif" width="100%">
-</p>
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=NOOR-404&style=flat-square&color=red"/>
-  <img src="https://komarev.com/ghpvc/?username=NOOR-404&style=flat-square&color=blue"/>
-</p>
+<br/>
+
+![Profile Views](https://komarev.com/ghpvc/?username=NOOR-404&color=58a6ff&style=flat-square&label=👁️+Profile+Views)
+&nbsp;
+[![GitHub followers](https://img.shields.io/github/followers/NOOR-404?label=Followers&style=flat-square&color=58a6ff&labelColor=0d1117)](https://github.com/NOOR-404)
+&nbsp;
+![GitHub Stars](https://img.shields.io/github/stars/NOOR-404?label=Stars&style=flat-square&color=f0c040&labelColor=0d1117)
+
+</div>
 <img src="https://raw.githubusercontent.com/NOOR-404/NOOR-404/refs/heads/main/Assests/Rainbow.gif" width="100%">
 
 
