@@ -28,7 +28,7 @@ I am a dedicated **Python Developer** and **Automation Specialist** from Banglad
 <img src="https://raw.githubusercontent.com/NOOR-404/NOOR-404/refs/heads/main/Assests/Rainbow.gif" width="100%">
 <br/>
 
-![Profile Views](https://komarev.com/ghpvc/?username=NOOR-404&color=58a6ff&style=flat-square&label=👁️+Profile+Views)
+![Profile Views](https://komarev.com/ghpvc/?username=NOOR-404&style=flat-square&color=blue)
 &nbsp;
 [![GitHub followers](https://img.shields.io/github/followers/NOOR-404?label=Followers&style=flat-square&color=58a6ff&labelColor=0d1117)](https://github.com/NOOR-404)
 &nbsp;
