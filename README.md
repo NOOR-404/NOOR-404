@@ -26,15 +26,13 @@ I am a dedicated **Python Developer** and **Automation Specialist** from Banglad
 </p>
 
 <img src="https://raw.githubusercontent.com/NOOR-404/NOOR-404/refs/heads/main/Assests/Rainbow.gif" width="100%">
-<br/>
-
-![Profile Views](https://komarev.com/ghpvc/?username=NOOR-404&color=58a6ff&style=flat-square)
-&nbsp;
-[![GitHub followers](https://img.shields.io/github/followers/NOOR-404?label=Followers&style=flat-square&color=58a6ff&labelColor=0d1117)](https://github.com/NOOR-404)
-&nbsp;
-![GitHub Stars](https://img.shields.io/github/stars/NOOR-404?label=Stars&style=flat-square&color=f0c040&labelColor=0d1117)
-
-</div>
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=NOOR-404&color=58a6ff&style=flat-square" alt="Profile Views"/>
+  <a href="https://github.com/NOOR-404">
+    <img src="https://img.shields.io/github/followers/NOOR-404?label=Followers&style=flat-square&color=58a6ff&labelColor=0d1117" alt="GitHub followers"/>
+  </a>
+  <img src="https://img.shields.io/github/stars/NOOR-404?label=Stars&style=flat-square&color=f0c040&labelColor=0d1117" alt="GitHub Stars"/>
+</p>
 <img src="https://raw.githubusercontent.com/NOOR-404/NOOR-404/refs/heads/main/Assests/Rainbow.gif" width="100%">
 
 
