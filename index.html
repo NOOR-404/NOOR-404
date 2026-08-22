@@ -1701,10 +1701,6 @@ footer {
 
 <script>
 const GITHUB_USERNAME = "NOOR-404";
-
-const GITHUB_API =
-  `https://api.github.com/users/${GITHUB_USERNAME}/repos?sort=updated&direction=desc&per_page=100`;
-
 let allProjects = [];
 
 /* STARS */
@@ -1938,67 +1934,81 @@ function countUp(element, target) {
   requestAnimationFrame(update);
 }
 
-/* GITHUB */
+/* GITHUB WITH LOCALSTORAGE CACHING */
 
 async function loadGitHub() {
-  const grid =
-    document.getElementById("projectsGrid");
-
-  const count =
-    document.getElementById("projectCount");
+  const grid = document.getElementById("projectsGrid");
+  const count = document.getElementById("projectCount");
 
   try {
-    const userResponse =
-      await fetch(
-        `https://api.github.com/users/${GITHUB_USERNAME}`
-      );
+    const cachedRepos = localStorage.getItem('github_repos');
+    const cachedStats = localStorage.getItem('github_stats');
+    const cachedTime = localStorage.getItem('github_time');
+    const now = new Date().getTime();
 
+    // 1 ghonta (3600000 ms) er modhye cache thakle API call skip korbe
+    if (cachedRepos && cachedStats && cachedTime && (now - cachedTime < 3600000)) {
+      const user = JSON.parse(cachedStats);
+      countUp(document.getElementById("repoStat"), user.public_repos || 0);
+      countUp(document.getElementById("followersStat"), user.followers || 0);
+
+      allProjects = JSON.parse(cachedRepos);
+      renderProjects(allProjects);
+      return;
+    }
+
+    // User Profile Stats Fetch
+    const userResponse = await fetch(`https://api.github.com/users/${GITHUB_USERNAME}`);
     if (userResponse.ok) {
-      const user =
-        await userResponse.json();
-
-      countUp(
-        document.getElementById("repoStat"),
-        user.public_repos || 0
-      );
-
-      countUp(
-        document.getElementById("followersStat"),
-        user.followers || 0
-      );
+      const user = await userResponse.json();
+      countUp(document.getElementById("repoStat"), user.public_repos || 0);
+      countUp(document.getElementById("followersStat"), user.followers || 0);
+      localStorage.setItem('github_stats', JSON.stringify(user));
     }
 
-    const response =
-      await fetch(GITHUB_API);
+    // Repositories Fetch (Pagination loop)
+    let page = 1;
+    let repos = [];
+    let fetchMore = true;
 
-    if (!response.ok) {
-      throw new Error(
-        "GitHub API request failed"
-      );
+    while (fetchMore) {
+      const response = await fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos?sort=updated&direction=desc&per_page=100&page=${page}`);
+      if (!response.ok) throw new Error("GitHub API limit exceeded or failed");
+      
+      const data = await response.json();
+      if (data.length > 0) {
+        repos = repos.concat(data);
+        page++;
+        if (data.length < 100) fetchMore = false;
+      } else {
+        fetchMore = false;
+      }
     }
 
-    const repos =
-      await response.json();
-
-    allProjects =
-      repos
-        .filter(repo => !repo.fork)
-        .sort(
-          (a, b) =>
-            new Date(b.updated_at) -
-            new Date(a.updated_at)
-        );
-
+    allProjects = repos.filter(repo => !repo.fork);
     renderProjects(allProjects);
 
+    // Cache save kora
+    localStorage.setItem('github_repos', JSON.stringify(allProjects));
+    localStorage.setItem('github_time', now);
+
   } catch (error) {
-    console.error(error);
+    console.error("API error or limit reached:", error);
+
+    // Jodi cache e puraton data thake tahole setai dekhabe, nahole error message
+    const cachedRepos = localStorage.getItem('github_repos');
+    if (cachedRepos) {
+      allProjects = JSON.parse(cachedRepos);
+      renderProjects(allProjects);
+      count.textContent = `${allProjects.length} PROJECTS (CACHED)`;
+      return;
+    }
 
     grid.innerHTML = `
       <div class="loading">
         <div>
           <i class="fa-solid fa-triangle-exclamation"></i>
-          Unable to load GitHub projects.
+          Unable to load GitHub projects (Rate limit or offline).
           <br><br>
           <a
             href="https://github.com/NOOR-404"
@@ -2012,8 +2022,7 @@ async function loadGitHub() {
       </div>
     `;
 
-    count.textContent =
-      "OFFLINE";
+    count.textContent = "OFFLINE";
   }
 }
 
