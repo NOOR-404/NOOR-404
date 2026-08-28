@@ -1,27 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,viewport-fit=cover">
 <meta name="description" content="NOOR-404 — Python Developer & Software Engineer">
 <meta name="theme-color" content="#000000">
-<title>NOOR-404 | Python Developer</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<title>NOOR-404 | Python Developer</title><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-<style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"><style>
 :root{
 --bg:#000;
 --white:#fff;
 --text:#f5f5f5;
 --muted:#777;
+--muted2:#555;
 --line:rgba(255,255,255,.09);
 --line2:rgba(255,255,255,.22);
 --glass:rgba(10,10,10,.72);
+--glass2:rgba(255,255,255,.035);
 --radius:22px;
 --container:1180px;
 --shadow:0 25px 80px rgba(0,0,0,.8);
@@ -67,15 +62,11 @@ color:inherit;
 text-decoration:none;
 }
 
-button,
-input,
-textarea,
-select{
+button,input,textarea,select{
 font:inherit;
 }
 
-input,
-textarea{
+input,textarea{
 font-size:16px!important;
 }
 
@@ -91,10 +82,6 @@ max-width:100%;
 background:#fff;
 color:#000;
 }
-
-/* =========================================================
-BOOT
-========================================================= */
 
 .boot{
 position:fixed;
@@ -514,10 +501,6 @@ background:rgba(255,255,255,.07);
 transform:translateY(-2px);
 }
 
-/* =========================================================
-BACKGROUND
-========================================================= */
-
 .cyber-bg,
 .grid-bg,
 .stars,
@@ -532,7 +515,9 @@ pointer-events:none;
 .cyber-bg{
 z-index:-10;
 overflow:hidden;
-background:radial-gradient(circle at 50% -20%,rgba(255,255,255,.08),transparent 30%),#000;
+background:
+radial-gradient(circle at 50% -20%,rgba(255,255,255,.08),transparent 30%),
+#000;
 }
 
 .cyber-bg::before,
@@ -641,10 +626,6 @@ background:radial-gradient(circle,rgba(255,255,255,.08),transparent 68%);
 transform:translate(-50%,-50%);
 }
 
-/* =========================================================
-NAV
-========================================================= */
-
 nav{
 position:fixed;
 inset:0 0 auto;
@@ -680,9 +661,9 @@ color:#777;
 .nav-links{
 display:flex;
 align-items:center;
-gap:28px;
+gap:26px;
 color:#aaa;
-font-size:14px;
+font-size:13px;
 font-weight:600;
 }
 
@@ -719,10 +700,6 @@ border-radius:12px;
 background:rgba(255,255,255,.03);
 color:#fff;
 }
-
-/* =========================================================
-GENERAL
-========================================================= */
 
 .container{
 width:min(calc(100% - 36px),var(--container));
@@ -848,10 +825,6 @@ transform:translateY(-4px);
 background:rgba(255,255,255,.08);
 }
 
-/* =========================================================
-PROFILE
-========================================================= */
-
 .profile-wrap{
 display:flex;
 justify-content:center;
@@ -895,6 +868,24 @@ overflow:hidden;
 z-index:2;
 }
 
+.profile-card::before{
+content:"";
+position:absolute;
+inset:0;
+background:linear-gradient(
+120deg,
+transparent 25%,
+rgba(255,255,255,.08) 50%,
+transparent 75%
+);
+transform:translateX(-100%);
+transition:.8s ease;
+}
+
+.profile-card:hover::before{
+transform:translateX(100%);
+}
+
 .profile-image{
 position:relative;
 z-index:1;
@@ -935,10 +926,6 @@ border:1px solid var(--line2);
 border-radius:50%;
 }
 
-/* =========================================================
-SECTION
-========================================================= */
-
 .section-head{
 display:flex;
 align-items:flex-end;
@@ -969,10 +956,6 @@ color:#777;
 font-size:14px;
 }
 
-/* =========================================================
-STATS
-========================================================= */
-
 .stats{
 display:grid;
 grid-template-columns:repeat(4,1fr);
@@ -989,9 +972,25 @@ transition:var(--ease);
 overflow:hidden;
 }
 
+.stat::after{
+content:"";
+position:absolute;
+left:0;
+bottom:0;
+width:100%;
+height:1px;
+background:linear-gradient(90deg,transparent,#fff,transparent);
+transform:scaleX(0);
+transition:.4s ease;
+}
+
 .stat:hover{
 transform:translateY(-8px);
 border-color:var(--line2);
+}
+
+.stat:hover::after{
+transform:scaleX(1);
 }
 
 .stat strong{
@@ -1006,10 +1005,6 @@ font-size:11px;
 text-transform:uppercase;
 letter-spacing:1px;
 }
-
-/* =========================================================
-ABOUT
-========================================================= */
 
 .about-grid{
 display:grid;
@@ -1145,9 +1140,214 @@ font-family:"Space Grotesk",sans-serif;
 font-size:14px;
 }
 
-/* =========================================================
-PROJECTS
-========================================================= */
+.dashboard{
+display:grid;
+grid-template-columns:1.4fr .6fr;
+gap:14px;
+}
+
+.dashboard-main,
+.dashboard-side{
+border:1px solid var(--line);
+border-radius:24px;
+background:var(--glass);
+overflow:hidden;
+}
+
+.dashboard-main{
+padding:28px;
+}
+
+.dash-top{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:30px;
+}
+
+.dash-title{
+font-family:"Space Grotesk",sans-serif;
+font-size:20px;
+}
+
+.live{
+font-family:"JetBrains Mono",monospace;
+font-size:9px;
+color:#777;
+}
+
+.live i{
+font-size:6px;
+color:#fff;
+margin-right:6px;
+animation:pulse 1s infinite;
+}
+
+.bars{
+height:180px;
+display:flex;
+align-items:flex-end;
+gap:10px;
+padding:10px 0;
+}
+
+.bar{
+flex:1;
+min-height:15px;
+border:1px solid rgba(255,255,255,.1);
+background:linear-gradient(to top,rgba(255,255,255,.03),rgba(255,255,255,.15));
+border-radius:6px 6px 2px 2px;
+animation:barPulse 2s ease-in-out infinite alternate;
+}
+
+.bar:nth-child(1){height:38%}
+.bar:nth-child(2){height:60%;animation-delay:.1s}
+.bar:nth-child(3){height:45%;animation-delay:.2s}
+.bar:nth-child(4){height:75%;animation-delay:.3s}
+.bar:nth-child(5){height:52%;animation-delay:.4s}
+.bar:nth-child(6){height:90%;animation-delay:.5s}
+.bar:nth-child(7){height:67%;animation-delay:.6s}
+.bar:nth-child(8){height:82%;animation-delay:.7s}
+.bar:nth-child(9){height:58%;animation-delay:.8s}
+.bar:nth-child(10){height:94%;animation-delay:.9s}
+.bar:nth-child(11){height:72%;animation-delay:1s}
+.bar:nth-child(12){height:87%;animation-delay:1.1s}
+
+@keyframes barPulse{
+to{opacity:.55;transform:scaleY(.85)}
+}
+
+.dash-labels{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:10px;
+}
+
+.dash-mini{
+padding:14px;
+border:1px solid var(--line);
+border-radius:13px;
+}
+
+.dash-mini small{
+display:block;
+color:#555;
+font-family:"JetBrains Mono",monospace;
+font-size:8px;
+margin-bottom:5px;
+}
+
+.dash-mini strong{
+font-family:"Space Grotesk",sans-serif;
+font-size:18px;
+}
+
+.dashboard-side{
+padding:24px;
+display:flex;
+flex-direction:column;
+gap:12px;
+}
+
+.node{
+padding:15px;
+border:1px solid var(--line);
+border-radius:14px;
+background:rgba(255,255,255,.02);
+}
+
+.node-head{
+display:flex;
+align-items:center;
+justify-content:space-between;
+margin-bottom:8px;
+}
+
+.node-name{
+font-family:"JetBrains Mono",monospace;
+font-size:9px;
+color:#777;
+}
+
+.node-status{
+font-size:8px;
+color:#aaa;
+}
+
+.node-line{
+height:3px;
+background:rgba(255,255,255,.07);
+border-radius:99px;
+overflow:hidden;
+}
+
+.node-line span{
+display:block;
+height:100%;
+width:var(--width);
+background:#fff;
+box-shadow:0 0 10px #fff;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:14px;
+}
+
+.service{
+position:relative;
+min-height:250px;
+padding:28px;
+border:1px solid var(--line);
+border-radius:22px;
+background:
+linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.008));
+overflow:hidden;
+transition:var(--ease);
+}
+
+.service:hover{
+transform:translateY(-9px);
+border-color:var(--line2);
+box-shadow:var(--shadow);
+}
+
+.service-number{
+position:absolute;
+right:20px;
+top:18px;
+font-family:"JetBrains Mono",monospace;
+font-size:9px;
+color:#444;
+}
+
+.service-icon{
+width:52px;
+height:52px;
+display:grid;
+place-items:center;
+border:1px solid var(--line);
+border-radius:15px;
+margin-bottom:25px;
+background:rgba(255,255,255,.035);
+}
+
+.service-icon i{
+font-size:20px;
+}
+
+.service h3{
+font-family:"Space Grotesk",sans-serif;
+font-size:20px;
+margin-bottom:9px;
+}
+
+.service p{
+color:#666;
+font-size:12px;
+line-height:1.8;
+}
 
 .project-tools{
 display:flex;
@@ -1210,10 +1410,26 @@ overflow:hidden;
 transition:.3s ease;
 }
 
+.project::after{
+content:"";
+position:absolute;
+width:100%;
+height:1px;
+left:0;
+top:0;
+background:linear-gradient(90deg,transparent,#fff,transparent);
+transform:scaleX(0);
+transition:.4s ease;
+}
+
 .project:hover{
 transform:translateY(-9px);
 border-color:var(--line2);
 box-shadow:var(--shadow);
+}
+
+.project:hover::after{
+transform:scaleX(1);
 }
 
 .project-top{
@@ -1295,11 +1511,135 @@ place-items:center;
 color:#666;
 text-align:center;
 }
+.focus-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:14px;
+}
 
-/* =========================================================
-SKILLS
-========================================================= */
+.focus-card{
+padding:30px;
+border:1px solid var(--line);
+border-radius:22px;
+background:var(--glass);
+transition:.3s ease;
+}
 
+.focus-card:hover{
+border-color:var(--line2);
+transform:translateY(-6px);
+}
+
+.focus-card h3{
+font-family:"Space Grotesk",sans-serif;
+font-size:24px;
+margin-bottom:20px;
+}
+
+.focus-list{
+display:flex;
+flex-direction:column;
+gap:12px;
+}
+
+.focus-item{
+display:flex;
+align-items:center;
+gap:12px;
+padding:12px;
+border:1px solid var(--line);
+border-radius:12px;
+color:#888;
+font-size:12px;
+}
+
+.focus-item i{
+width:30px;
+height:30px;
+display:grid;
+place-items:center;
+border-radius:8px;
+background:rgba(255,255,255,.04);
+color:#fff;
+}
+
+.focus-item strong{
+color:#ddd;
+}
+.timeline{
+position:relative;
+max-width:900px;
+margin:auto;
+}
+
+.timeline::before{
+content:"";
+position:absolute;
+left:50%;
+top:0;
+bottom:0;
+width:1px;
+background:linear-gradient(
+to bottom,
+transparent,
+rgba(255,255,255,.2),
+transparent
+);
+}
+
+.timeline-item{
+position:relative;
+width:50%;
+padding:0 40px 45px;
+}
+
+.timeline-item:nth-child(odd){
+left:0;
+text-align:right;
+}
+
+.timeline-item:nth-child(even){
+left:50%;
+}
+
+.timeline-dot{
+position:absolute;
+top:5px;
+width:11px;
+height:11px;
+border:2px solid #000;
+border-radius:50%;
+background:#fff;
+box-shadow:0 0 15px #fff;
+}
+
+.timeline-item:nth-child(odd) .timeline-dot{
+right:-6px;
+}
+
+.timeline-item:nth-child(even) .timeline-dot{
+left:-5px;
+}
+
+.timeline-year{
+font-family:"JetBrains Mono",monospace;
+font-size:10px;
+letter-spacing:2px;
+color:#555;
+margin-bottom:8px;
+}
+
+.timeline-item h3{
+font-family:"Space Grotesk",sans-serif;
+font-size:21px;
+margin-bottom:8px;
+}
+
+.timeline-item p{
+color:#666;
+font-size:12px;
+line-height:1.8;
+}
 .skills{
 display:grid;
 grid-template-columns:repeat(4,1fr);
@@ -1335,9 +1675,80 @@ color:#666;
 font-size:12px;
 }
 
-/* =========================================================
-CONTACT
-========================================================= */
+.stack-grid{
+display:grid;
+grid-template-columns:repeat(6,1fr);
+gap:10px;
+}
+
+.stack-item{
+min-height:120px;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+gap:10px;
+border:1px solid var(--line);
+border-radius:17px;
+background:var(--glass);
+transition:.3s ease;
+}
+
+.stack-item:hover{
+transform:translateY(-6px);
+border-color:var(--line2);
+background:rgba(255,255,255,.05);
+}
+
+.stack-item i{
+font-size:26px;
+}
+
+.stack-item span{
+font-family:"JetBrains Mono",monospace;
+font-size:8px;
+color:#666;
+letter-spacing:1px;
+}
+
+.philosophy{
+padding:55px;
+border:1px solid var(--line);
+border-radius:28px;
+background:
+radial-gradient(circle at center,rgba(255,255,255,.06),transparent 45%),
+linear-gradient(145deg,rgba(255,255,255,.05),rgba(255,255,255,.01));
+text-align:center;
+overflow:hidden;
+}
+
+.philosophy small{
+font-family:"JetBrains Mono",monospace;
+font-size:9px;
+color:#555;
+letter-spacing:3px;
+}
+
+.philosophy h2{
+margin:18px auto;
+max-width:800px;
+font-family:"Space Grotesk",sans-serif;
+font-size:clamp(35px,6vw,65px);
+line-height:1;
+letter-spacing:-3px;
+}
+
+.philosophy h2 span{
+color:#666;
+}
+
+.philosophy p{
+max-width:650px;
+margin:auto;
+color:#666;
+font-size:13px;
+line-height:1.9;
+}
 
 .contact-grid{
 display:grid;
@@ -1419,16 +1830,19 @@ border-radius:12px;
 outline:none;
 background:#050505;
 color:#fff;
+transition:.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+border-color:rgba(255,255,255,.35);
+box-shadow:0 0 0 3px rgba(255,255,255,.03);
 }
 
 .form-group textarea{
 min-height:130px;
 resize:vertical;
 }
-
-/* =========================================================
-FOOTER
-========================================================= */
 
 footer{
 padding:35px 0;
@@ -1465,10 +1879,6 @@ color:#000;
 transform:translateY(-5px) rotate(8deg);
 }
 
-/* =========================================================
-REVEAL
-========================================================= */
-
 .reveal{
 opacity:0;
 transform:translateY(45px) scale(.98);
@@ -1486,8 +1896,177 @@ filter:blur(0);
 }
 
 /* =========================================================
+DEV FLOW (added)
+========================================================= */
+
+.flow{
+position:relative;
+display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:0;
+}
+
+.flow::before{
+content:"";
+position:absolute;
+left:8%;
+right:8%;
+top:42px;
+height:1px;
+background:linear-gradient(90deg,transparent,#333,#fff,#333,transparent);
+}
+
+.flow-step{
+position:relative;
+z-index:1;
+text-align:center;
+}
+
+.flow-node{
+width:84px;
+height:84px;
+margin:auto;
+display:grid;
+place-items:center;
+border:1px solid var(--line2);
+border-radius:50%;
+background:#030303;
+box-shadow:0 0 0 8px rgba(255,255,255,.015);
+font-family:"JetBrains Mono",monospace;
+font-size:11px;
+transition:.35s ease;
+}
+
+.flow-step:hover .flow-node{
+background:#fff;
+color:#000;
+box-shadow:0 0 35px rgba(255,255,255,.15);
+transform:scale(1.08);
+}
+
+.flow-step h3{
+margin-top:18px;
+font-family:"Space Grotesk",sans-serif;
+font-size:15px;
+}
+
+.flow-step p{
+margin:6px auto 0;
+max-width:150px;
+color:#555;
+font-size:10px;
+}
+
+@media(max-width:800px){
+
+.flow{
+grid-template-columns:1fr;
+gap:25px;
+}
+
+.flow::before{
+left:50%;
+top:42px;
+bottom:42px;
+width:1px;
+height:auto;
+}
+
+}
+
+/* =========================================================
+TERMINAL (added)
+========================================================= */
+
+.terminal-window{
+border:1px solid var(--line2);
+border-radius:20px;
+overflow:hidden;
+background:#030303;
+box-shadow:var(--shadow);
+}
+
+.terminal-head{
+height:45px;
+display:flex;
+align-items:center;
+gap:7px;
+padding:0 16px;
+border-bottom:1px solid var(--line);
+}
+
+.terminal-head span{
+width:7px;
+height:7px;
+border-radius:50%;
+background:#444;
+}
+
+.terminal-title{
+margin-left:8px;
+font-family:"JetBrains Mono",monospace;
+font-size:8px;
+color:#555;
+}
+
+.terminal-body{
+padding:22px;
+min-height:300px;
+font-family:"JetBrains Mono",monospace;
+font-size:11px;
+line-height:2;
+color:#777;
+}
+
+.term-line{
+white-space:pre-wrap;
+}
+
+.term-prompt{
+color:#fff;
+}
+
+.term-dim{
+color:#444;
+}
+
+.term-cursor{
+display:inline-block;
+width:7px;
+height:14px;
+background:#fff;
+vertical-align:-2px;
+animation:blink .8s step-end infinite;
+}
+
+.terminal-input{
+display:flex;
+gap:8px;
+align-items:center;
+margin-top:5px;
+}
+
+.terminal-input input{
+flex:1;
+border:0;
+outline:0;
+background:transparent;
+color:#fff;
+font-family:"JetBrains Mono",monospace;
+font-size:11px!important;
+}
+
+/* =========================================================
 MOBILE
 ========================================================= */
+
+@media(max-width:1050px){
+
+.stack-grid{
+grid-template-columns:repeat(3,1fr);
+}
+
+}
 
 @media(max-width:950px){
 
@@ -1534,6 +2113,14 @@ grid-template-columns:1fr;
 
 .about-grid{
 grid-template-columns:1fr;
+}
+
+.dashboard{
+grid-template-columns:1fr;
+}
+
+.services{
+grid-template-columns:repeat(2,1fr);
 }
 
 }
@@ -1634,8 +2221,6 @@ text-align:center;
 display:none;
 }
 
-/* MOBILE PROFILE - NO AUTO SCALE */
-
 .profile-card{
 transform:none!important;
 transition:none;
@@ -1645,22 +2230,49 @@ transition:none;
 transform:none!important;
 }
 
+.services{
+grid-template-columns:1fr;
 }
 
-@media(max-width:600px){
-
-.about-main{
-padding:27px;
-min-height:auto;
+.focus-grid{
+grid-template-columns:1fr;
 }
 
-.about-side{
-grid-template-columns:1fr 1fr;
+.stack-grid{
+grid-template-columns:repeat(2,1fr);
 }
 
-.about-card{
-min-height:150px;
-padding:18px;
+.dashboard-main{
+padding:20px;
+}
+
+.dash-labels{
+grid-template-columns:repeat(2,1fr);
+}
+
+.timeline::before{
+left:8px;
+}
+
+.timeline-item,
+.timeline-item:nth-child(even),
+.timeline-item:nth-child(odd){
+width:100%;
+left:0;
+padding-left:35px;
+padding-right:0;
+text-align:left;
+}
+
+.timeline-item .timeline-dot,
+.timeline-item:nth-child(odd) .timeline-dot,
+.timeline-item:nth-child(even) .timeline-dot{
+left:3px;
+right:auto;
+}
+
+.philosophy{
+padding:35px 22px;
 }
 
 }
@@ -1740,7 +2352,23 @@ right:12px;
 grid-template-columns:1fr;
 }
 
+.stack-grid{
+grid-template-columns:repeat(2,1fr);
 }
+
+.bars{
+gap:5px;
+}
+
+.bar:nth-child(n+9){
+display:none;
+}
+
+}
+
+/* =========================================================
+REDUCED MOTION
+========================================================= */
 
 @media(prefers-reduced-motion:reduce){
 
@@ -1753,122 +2381,66 @@ transition-duration:.01ms!important;
 }
 
 }
-</style>
-</head>
-
-<body class="booting">
-
-<!-- =========================================================
+</style></head><body class="booting"><!-- =========================================================
 BOOT
-========================================================= -->
-
-<div class="boot" id="boot">
-
-<div class="boot-bg"></div>
+========================================================= --><div class="boot" id="boot"><div class="boot-bg"></div>
 <div class="boot-grid"></div>
 <div class="boot-scan"></div>
 <div class="boot-noise"></div>
-<div class="boot-vignette"></div>
-
-<div class="boot-corner bt1">NOOR-404 // SECURE NODE</div>
+<div class="boot-vignette"></div><div class="boot-corner bt1">NOOR-404 // SECURE NODE</div>
 <div class="boot-corner bt2">CORE: 404-X</div>
 <div class="boot-corner bt3">BUILD: 2026.08</div>
-<div class="boot-corner bt4">STATUS: BOOTING</div>
-
-<div class="boot-center">
-
-<div class="boot-hud">
-
-<div class="hud hud1"></div>
+<div class="boot-corner bt4">STATUS: BOOTING</div><div class="boot-center"><div class="boot-hud"><div class="hud hud1"></div>
 <div class="hud hud2"></div>
 <div class="hud hud3"></div>
-<div class="hud hud4"></div>
-
-<div class="radar">
+<div class="hud hud4"></div><div class="radar">
 <span class="radar-dot"></span>
 <span class="radar-dot"></span>
 <span class="radar-dot"></span>
-</div>
-
-<div class="boot-core">
+</div><div class="boot-core">
 <div class="core-line"></div>
 <div class="core-text">404</div>
-</div>
-
-</div>
-
-<div class="boot-logo">
+</div></div><div class="boot-logo">
 NOOR<span>-404</span>
-</div>
-
-<div class="boot-sub">
+</div><div class="boot-sub">
 PYTHON DEVELOPER // SYSTEM INITIALIZATION
-</div>
-
-<div class="boot-terminal" id="bootTerminal"></div>
-
-<div class="progress-info">
+</div><div class="boot-terminal" id="bootTerminal"></div><div class="progress-info">
 <span id="bootStatus">INITIALIZING</span>
 <span id="bootPercent">0%</span>
-</div>
-
-<div class="progress">
+</div><div class="progress">
 <div class="progress-bar" id="bootBar"></div>
-</div>
-
-<div class="progress-segments" id="bootSegments">
+</div><div class="progress-segments" id="bootSegments">
 <span></span><span></span><span></span><span></span><span></span>
 <span></span><span></span><span></span><span></span><span></span>
 <span></span><span></span><span></span><span></span><span></span>
 <span></span><span></span><span></span><span></span><span></span>
 <span></span>
-</div>
-
-<div class="online" id="bootOnline">
+</div><div class="online" id="bootOnline">
 <i class="fa-solid fa-circle"></i>
 SYSTEM ONLINE
-</div>
-
-<div class="boot-actions">
-
-<button class="boot-btn" id="skipBoot">
+</div><div class="boot-actions"><button class="boot-btn" id="skipBoot">
 <i class="fa-solid fa-forward"></i>
 SKIP
-</button>
-
-<button class="boot-btn" id="soundBoot">
+</button><button class="boot-btn" id="soundBoot">
 <i class="fa-solid fa-volume-xmark"></i>
 SOUND OFF
-</button>
-
-</div>
-
-</div>
-</div>
-
-<!-- BACKGROUND -->
-
-<div class="cyber-bg"></div>
+</button></div></div>
+</div><!-- =========================================================
+BACKGROUND
+========================================================= --><div class="cyber-bg"></div>
 <div class="grid-bg"></div>
 <div class="stars" id="stars"></div>
 <div class="particles" id="particles"></div>
 <div class="scanline"></div>
-<div class="mouse-glow" id="mouseGlow"></div>
-
-<!-- NAV -->
-
-<nav>
-
-<div class="nav-inner">
-
-<a href="#home" class="brand">
+<div class="mouse-glow" id="mouseGlow"></div><!-- =========================================================
+NAVIGATION
+========================================================= --><nav><div class="nav-inner"><a href="#home" class="brand">
 NOOR<span>-404</span>
-</a>
-
-<div class="nav-links" id="navLinks">
-
-<a href="#home">Home</a>
+</a><div class="nav-links" id="navLinks"><a href="#home">Home</a>
 <a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#flow">Dev Flow</a>
+<a href="#terminal">Terminal</a>
 <a href="#projects">Projects</a>
 <a href="#skills">Skills</a>
 <a href="#contact">Contact</a>
@@ -1882,9 +2454,7 @@ rel="noopener">
 GitHub
 </a>
 
-</div>
-
-<button
+</div><button
 class="mobile-menu"
 id="mobileMenu"
 aria-label="Open menu">
@@ -1892,32 +2462,14 @@ aria-label="Open menu">
 </button>
 
 </div>
-</nav>
-
-<main>
-
-<!-- HERO -->
-
-<section id="home" class="hero">
-
-<div class="container">
-
-<div class="hero-grid">
-
-<div class="hero-content reveal">
-
-<div class="eyebrow">
+</nav><main><!-- =========================================================
+HERO
+========================================================= --><section id="home" class="hero"><div class="container"><div class="hero-grid"><div class="hero-content reveal"><div class="eyebrow">
 <span class="status-dot"></span>
 SYSTEM ONLINE / AVAILABLE FOR PROJECTS
-</div>
-
-<h1>
+</div><h1>
 NOOR<span>-404</span>
-</h1>
-
-<p class="hero-description">
-
-Python Developer building
+</h1><p class="hero-description">Python Developer building
 
 <span
 class="typing-text"
@@ -1925,21 +2477,13 @@ id="typingText"></span>
 
 <span class="cursor"></span>
 
-</p>
-
-<div class="hero-buttons">
-
-<a href="#about" class="btn btn-primary">
+</p><div class="hero-buttons"><a href="#about" class="btn btn-primary">
 <i class="fa-solid fa-user"></i>
 About Me
-</a>
-
-<a href="#projects" class="btn btn-outline">
+</a><a href="#projects" class="btn btn-outline">
 <i class="fa-solid fa-code"></i>
 View Projects
-</a>
-
-<a
+</a><a
 href="https://github.com/NOOR-404"
 target="_blank"
 rel="noopener"
@@ -1948,195 +2492,260 @@ class="btn btn-outline">
 GitHub
 </a>
 
-</div>
-
-</div>
-
-<div class="profile-wrap reveal">
-
-<div class="orbit"></div>
-<div class="orbit-two"></div>
-
-<div class="profile-card" id="profileCard">
-
-<img
+</div></div><div class="profile-wrap reveal"><div class="orbit"></div>
+<div class="orbit-two"></div><div class="profile-card" id="profileCard"><img
 class="profile-image"
 src="https://github.com/user-attachments/assets/91bf6ca4-a3d8-4166-9ce9-8fbc21dab0be"
 alt="NOOR-404">
 
-<div class="profile-bottom">
-
-<div>
+<div class="profile-bottom"><div>
 <strong>NOOR-404</strong>
 <small>Python Developer</small>
-</div>
-
-<div class="verified">
+</div><div class="verified">
 <i class="fa-solid fa-check"></i>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
-</section>
-
-<!-- STATS -->
-
-<section>
-
-<div class="container">
-
-<div class="stats reveal">
-
-<div class="stat">
+</div></div></div></div></div>
+</div></section><!-- =========================================================
+STATS
+========================================================= --><section><div class="container"><div class="stats reveal"><div class="stat">
 <strong id="repoStat">0</strong>
 <span>Public Repositories</span>
-</div>
-
-<div class="stat">
+</div><div class="stat">
 <strong id="followersStat">0</strong>
 <span>Followers</span>
-</div>
-
-<div class="stat">
+</div><div class="stat">
 <strong>Python</strong>
 <span>Primary Language</span>
-</div>
-
-<div class="stat">
+</div><div class="stat">
 <strong>24/7</strong>
 <span>Build Mode</span>
+</div></div></div>
+</section><!-- =========================================================
+SYSTEM DASHBOARD
+========================================================= --><section><div class="container"><div class="section-head reveal"><div>
+<div class="section-kicker">// System / Telemetry</div>
+<h2 class="section-title">Developer OS</h2>
+</div><p class="section-description">
+A visual snapshot of the development environment and active workflow.
+</p></div><div class="dashboard reveal"><div class="dashboard-main"><div class="dash-top">
+<div class="dash-title">BUILD ACTIVITY</div>
+<div class="live">
+<i class="fa-solid fa-circle"></i>
+LIVE NODE
 </div>
+</div><div class="bars"><span class="bar"></span>
+<span class="bar"></span>
+<span class="bar"></span>
+<span class="bar"></span>
+<span class="bar"></span>
+<span class="bar"></span>
+<span class="bar"></span>
+<span class="bar"></span>
+<span class="bar"></span>
+<span class="bar"></span>
+<span class="bar"></span>
+<span class="bar"></span>
 
-</div>
-
-</div>
-</section>
-
-<!-- ABOUT -->
-
-<section id="about">
-
-<div class="container">
-
-<div class="section-head reveal">
-
-<div>
+</div><div class="dash-labels"><div class="dash-mini">
+<small>RUNTIME</small>
+<strong>PY 3.x</strong>
+</div><div class="dash-mini">
+<small>MODE</small>
+<strong>BUILD</strong>
+</div><div class="dash-mini">
+<small>STATUS</small>
+<strong>ONLINE</strong>
+</div><div class="dash-mini">
+<small>NODE</small>
+<strong>404-X</strong>
+</div></div></div><div class="dashboard-side"><div class="node"><div class="node-head">
+<span class="node-name">PYTHON ENGINE</span>
+<span class="node-status">ACTIVE</span>
+</div><div class="node-line">
+<span style="--width:92%"></span>
+</div></div><div class="node"><div class="node-head">
+<span class="node-name">API SYSTEM</span>
+<span class="node-status">READY</span>
+</div><div class="node-line">
+<span style="--width:84%"></span>
+</div></div><div class="node"><div class="node-head">
+<span class="node-name">AUTOMATION</span>
+<span class="node-status">ACTIVE</span>
+</div><div class="node-line">
+<span style="--width:88%"></span>
+</div></div><div class="node"><div class="node-head">
+<span class="node-name">WEB ENGINE</span>
+<span class="node-status">READY</span>
+</div><div class="node-line">
+<span style="--width:79%"></span>
+</div></div></div></div></div></section><!-- =========================================================
+ABOUT
+========================================================= --><section id="about"><div class="container"><div class="section-head reveal"><div>
 <div class="section-kicker">// Identity / Profile</div>
 <h2 class="section-title">About Me</h2>
-</div>
-
-<p class="section-description">
+</div><p class="section-description">
 Developer profile, interests and current technical focus.
-</p>
-
-</div>
-
-<div class="about-grid">
-
-<div class="about-main reveal">
-
-<div class="about-number">01 // PROFILE</div>
-
-<h3>
+</p></div><div class="about-grid"><div class="about-main reveal"><div class="about-number">01 // PROFILE</div><h3>
 Building ideas into
 <span>real software.</span>
-</h3>
-
-<p>
+</h3><p>
 I'm <strong>NOOR-404</strong>, a Python Developer interested in
 software development, automation, APIs and modern web technologies.
 I enjoy turning ideas into practical projects and experimenting with
 new technologies.
-</p>
-
-<p>
+</p><p>
 My focus is on clean code, useful tools, modern interfaces and
 building projects that are fast, practical and maintainable.
-</p>
-
-<div class="about-tags">
+</p><div class="about-tags">
 <span>PYTHON</span>
 <span>API</span>
 <span>AUTOMATION</span>
 <span>WEB</span>
 <span>SOFTWARE</span>
-</div>
-
-</div>
-
-<div class="about-side reveal">
-
-<div class="about-card">
+<span>GITHUB</span>
+</div></div><div class="about-side reveal"><div class="about-card">
 <i class="fa-brands fa-python"></i>
 <div>
 <small>PRIMARY STACK</small>
 <strong>Python Development</strong>
 </div>
-</div>
-
-<div class="about-card">
+</div><div class="about-card">
 <i class="fa-solid fa-gears"></i>
 <div>
 <small>FOCUS</small>
 <strong>Automation & APIs</strong>
 </div>
-</div>
-
-<div class="about-card">
+</div><div class="about-card">
 <i class="fa-solid fa-laptop-code"></i>
 <div>
 <small>BUILD STYLE</small>
 <strong>Modern & Efficient</strong>
 </div>
-</div>
-
-<div class="about-card">
+</div><div class="about-card">
 <i class="fa-solid fa-rocket"></i>
 <div>
 <small>MISSION</small>
 <strong>Build • Learn • Improve</strong>
 </div>
-</div>
+</div></div></div></div></section><!-- =========================================================
+SERVICES
+========================================================= --><section id="services"><div class="container"><div class="section-head reveal"><div>
+<div class="section-kicker">// Capabilities / Services</div>
+<h2 class="section-title">What I Build</h2>
+</div><p class="section-description">
+Practical software, tools and systems designed around real-world problems.
+</p></div><div class="services"><div class="service reveal"><span class="service-number">01</span>
 
-</div>
+<div class="service-icon">
+<i class="fa-brands fa-python"></i>
+</div><h3>Python Development</h3><p>
+Custom Python applications, scripts, utilities and developer-focused
+software with a clean and maintainable architecture.
+</p></div><div class="service reveal"><span class="service-number">02</span>
 
-</div>
+<div class="service-icon">
+<i class="fa-solid fa-robot"></i>
+</div><h3>Automation</h3><p>
+Workflow automation and custom tools that reduce repetitive tasks
+and make development processes faster.
+</p></div><div class="service reveal"><span class="service-number">03</span>
 
-</div>
+<div class="service-icon">
+<i class="fa-solid fa-cloud"></i>
+</div><h3>API Systems</h3><p>
+Working with APIs, data flows, integrations and backend communication
+for practical software projects.
+</p></div><div class="service reveal"><span class="service-number">04</span>
 
-</section>
+<div class="service-icon">
+<i class="fa-solid fa-globe"></i>
+</div><h3>Web Development</h3><p>
+Responsive and modern interfaces with futuristic visual systems,
+animations and mobile-first layouts.
+</p></div><div class="service reveal"><span class="service-number">05</span>
 
-<!-- PROJECTS -->
+<div class="service-icon">
+<i class="fa-solid fa-terminal"></i>
+</div><h3>Developer Tools</h3><p>
+Useful command-line utilities, scripts and productivity tools
+for developers and technical workflows.
+</p></div><div class="service reveal"><span class="service-number">06</span>
 
-<section id="projects">
+<div class="service-icon">
+<i class="fa-solid fa-lightbulb"></i>
+</div><h3>Experimental Projects</h3><p>
+Exploring new technologies, ideas and experimental concepts
+to learn, improve and build better systems.
+</p></div></div></div></section><!-- =========================================================
+DEV FLOW (added)
+========================================================= --><section id="flow"><div class="container"><div class="section-head reveal"><div>
+<div class="section-kicker">// Development Pipeline</div>
+<h2 class="section-title">Dev Flow</h2>
+</div><p class="section-description">
+The typical path from an empty workspace to a finished release.
+</p></div><div class="flow reveal"><div class="flow-step">
+<div class="flow-node">01</div>
+<h3>IDEA</h3>
+<p>Define the problem and target.</p>
+</div><div class="flow-step">
+<div class="flow-node">02</div>
+<h3>DESIGN</h3>
+<p>Plan architecture and interface.</p>
+</div><div class="flow-step">
+<div class="flow-node">03</div>
+<h3>CODE</h3>
+<p>Build the actual system.</p>
+</div><div class="flow-step">
+<div class="flow-node">04</div>
+<h3>TEST</h3>
+<p>Debug, optimize and verify.</p>
+</div><div class="flow-step">
+<div class="flow-node">05</div>
+<h3>SHIP</h3>
+<p>Deploy and keep improving.</p>
+</div></div></div></section><!-- =========================================================
+TERMINAL (added)
+========================================================= --><section id="terminal"><div class="container"><div class="section-head reveal"><div>
+<div class="section-kicker">// Interactive Environment</div>
+<h2 class="section-title">Terminal</h2>
+</div><p class="section-description">
+A small interactive developer terminal. Type commands and explore.
+</p></div><div class="terminal-window reveal"><div class="terminal-head"><span></span>
+<span></span>
+<span></span>
 
-<div class="container">
+<div class="terminal-title">
+noor404@dev-os:~
+</div></div><div class="terminal-body" id="terminalBody"><div class="term-line">
+<span class="term-prompt">noor404@dev-os:~$</span>
+<span> whoami</span>
+</div><div class="term-line">
+NOOR-404 — Python Developer
+</div><div class="term-line">
+<span class="term-prompt">noor404@dev-os:~$</span>
+<span> status</span>
+</div><div class="term-line">
+SYSTEM ONLINE • BUILD MODE ACTIVE • CORE 404-X
+</div><div class="term-line">
+<span class="term-prompt">noor404@dev-os:~$</span>
+<span> help</span>
+</div><div class="term-line term-dim">
+Available: whoami / status / skills / about / github / clear
+</div><div class="terminal-input"><span class="term-prompt">noor404@dev-os:~$</span>
 
-<div class="section-head reveal">
+<input
+id="terminalInput"
+autocomplete="off"
+spellcheck="false"
+placeholder="type a command...">
 
-<div>
+</div></div></div></div></section><!-- =========================================================
+PROJECTS
+========================================================= --><section id="projects"><div class="container"><div class="section-head reveal"><div>
 <div class="section-kicker">// GitHub / Work</div>
 <h2 class="section-title">Projects</h2>
-</div>
-
-<p class="section-description">
+</div><p class="section-description">
 Live public repositories automatically loaded from GitHub.
-</p>
-
-</div>
-
-<div class="project-tools reveal">
-
-<div class="search-box">
-
-<i class="fa-solid fa-magnifying-glass"></i>
+</p></div><div class="project-tools reveal"><div class="search-box"><i class="fa-solid fa-magnifying-glass"></i>
 
 <input
 type="search"
@@ -2144,102 +2753,164 @@ id="projectSearch"
 placeholder="Search projects..."
 autocomplete="off">
 
-</div>
-
-<div class="project-count" id="projectCount">
+</div><div class="project-count" id="projectCount">
 LOADING...
-</div>
-
-</div>
-
-<div class="projects-grid" id="projectsGrid">
-
-<div class="loading">
+</div></div><div class="projects-grid" id="projectsGrid"><div class="loading">
 <i class="fa-solid fa-spinner fa-spin"></i>
 Loading GitHub projects...
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- SKILLS -->
-
-<section id="skills">
-
-<div class="container">
-
-<div class="section-head reveal">
-
+</div></div></div></section><!-- =========================================================
+CURRENT FOCUS
+========================================================= --><section><div class="container"><div class="section-head reveal"><div>
+<div class="section-kicker">// Current / Focus</div>
+<h2 class="section-title">Current Focus</h2>
+</div><p class="section-description">
+Areas currently receiving the most attention.
+</p></div><div class="focus-grid"><div class="focus-card reveal"><h3>Learning Pipeline</h3><div class="focus-list"><div class="focus-item">
+<i class="fa-brands fa-python"></i>
 <div>
+<strong>Advanced Python</strong><br>
+Software architecture & tooling
+</div>
+</div><div class="focus-item">
+<i class="fa-solid fa-network-wired"></i>
+<div>
+<strong>API Engineering</strong><br>
+Integrations & backend systems
+</div>
+</div><div class="focus-item">
+<i class="fa-solid fa-code"></i>
+<div>
+<strong>Modern Web</strong><br>
+Responsive frontend systems
+</div>
+</div></div></div><div class="focus-card reveal"><h3>Build Pipeline</h3><div class="focus-list"><div class="focus-item">
+<i class="fa-solid fa-lightbulb"></i>
+<div>
+<strong>Idea</strong><br>
+Find a useful problem
+</div>
+</div><div class="focus-item">
+<i class="fa-solid fa-screwdriver-wrench"></i>
+<div>
+<strong>Build</strong><br>
+Prototype and engineer
+</div>
+</div><div class="focus-item">
+<i class="fa-solid fa-rocket"></i>
+<div>
+<strong>Improve</strong><br>
+Test, optimize and ship
+</div>
+</div></div></div></div></div></section><!-- =========================================================
+JOURNEY
+========================================================= --><section><div class="container"><div class="section-head reveal"><div>
+<div class="section-kicker">// Development / Journey</div>
+<h2 class="section-title">My Journey</h2>
+</div><p class="section-description">
+A simple timeline representing the developer mindset and progression.
+</p></div><div class="timeline"><div class="timeline-item reveal"><span class="timeline-dot"></span>
+
+<div class="timeline-year">PHASE 01</div><h3>Started Building</h3><p>
+Started exploring programming and turning ideas into small practical
+software projects.
+</p></div><div class="timeline-item reveal"><span class="timeline-dot"></span>
+
+<div class="timeline-year">PHASE 02</div><h3>Python & Automation</h3><p>
+Focused on Python, scripting, automation and creating useful developer tools.
+</p></div><div class="timeline-item reveal"><span class="timeline-dot"></span>
+
+<div class="timeline-year">PHASE 03</div><h3>APIs & Web</h3><p>
+Expanded into APIs, web technologies, interfaces and full project workflows.
+</p></div><div class="timeline-item reveal"><span class="timeline-dot"></span>
+
+<div class="timeline-year">PHASE 04</div><h3>Build & Experiment</h3><p>
+Continuing to experiment with new technologies and build more advanced systems.
+</p></div></div></div></section><!-- =========================================================
+SKILLS
+========================================================= --><section id="skills"><div class="container"><div class="section-head reveal"><div>
 <div class="section-kicker">// Tech Stack</div>
 <h2 class="section-title">Skills</h2>
-</div>
-
-<p class="section-description">
+</div><p class="section-description">
 Tools and technologies used to build modern software.
-</p>
-
-</div>
-
-<div class="skills reveal">
-
-<div class="skill">
+</p></div><div class="skills reveal"><div class="skill">
 <i class="fa-brands fa-python"></i>
 <h3>Python</h3>
 <p>Automation, scripting and applications</p>
-</div>
-
-<div class="skill">
+</div><div class="skill">
 <i class="fa-solid fa-server"></i>
 <h3>APIs</h3>
 <p>REST APIs and backend systems</p>
-</div>
-
-<div class="skill">
+</div><div class="skill">
 <i class="fa-solid fa-code"></i>
 <h3>Web Development</h3>
 <p>Modern responsive web interfaces</p>
-</div>
-
-<div class="skill">
+</div><div class="skill">
 <i class="fa-solid fa-terminal"></i>
 <h3>Automation</h3>
 <p>Developer tools and workflow automation</p>
-</div>
+</div></div></div></section><!-- =========================================================
+TECH STACK
+========================================================= --><section><div class="container"><div class="section-head reveal"><div>
+<div class="section-kicker">// Arsenal / Technologies</div>
+<h2 class="section-title">Developer Stack</h2>
+</div><p class="section-description">
+Technologies and environments used across different projects.
+</p></div><div class="stack-grid reveal"><div class="stack-item">
+<i class="fa-brands fa-python"></i>
+<span>PYTHON</span>
+</div><div class="stack-item">
+<i class="fa-brands fa-js"></i>
+<span>JAVASCRIPT</span>
+</div><div class="stack-item">
+<i class="fa-brands fa-html5"></i>
+<span>HTML5</span>
+</div><div class="stack-item">
+<i class="fa-brands fa-css3-alt"></i>
+<span>CSS3</span>
+</div><div class="stack-item">
+<i class="fa-brands fa-github"></i>
+<span>GITHUB</span>
+</div><div class="stack-item">
+<i class="fa-brands fa-git-alt"></i>
+<span>GIT</span>
+</div><div class="stack-item">
+<i class="fa-solid fa-database"></i>
+<span>DATABASE</span>
+</div><div class="stack-item">
+<i class="fa-solid fa-terminal"></i>
+<span>CLI</span>
+</div><div class="stack-item">
+<i class="fa-solid fa-cloud"></i>
+<span>API</span>
+</div><div class="stack-item">
+<i class="fa-solid fa-mobile-screen"></i>
+<span>MOBILE</span>
+</div><div class="stack-item">
+<i class="fa-solid fa-server"></i>
+<span>BACKEND</span>
+</div><div class="stack-item">
+<i class="fa-solid fa-code"></i>
+<span>SOFTWARE</span>
+</div></div></div></section><!-- =========================================================
+PHILOSOPHY
+========================================================= --><section><div class="container"><div class="philosophy reveal"><small>// DEVELOPER PHILOSOPHY</small>
 
-</div>
-
-</div>
-
-</section>
-
-<!-- CONTACT -->
-
-<section id="contact">
-
-<div class="container">
-
-<div class="section-head reveal">
-
-<div>
+<h2>
+Build it.
+<span>Break it.</span>
+Improve it.
+</h2><p>
+Good software is not only about writing code. It's about understanding
+the problem, experimenting with ideas, learning from failures and
+continuously improving the final result.
+</p></div></div></section><!-- =========================================================
+CONTACT
+========================================================= --><section id="contact"><div class="container"><div class="section-head reveal"><div>
 <div class="section-kicker">// Communication Channel</div>
 <h2 class="section-title">Contact</h2>
-</div>
-
-<p class="section-description">
+</div><p class="section-description">
 Have a project, collaboration or idea? Let's connect.
-</p>
-
-</div>
-
-<div class="contact-grid">
-
-<div class="contact-info reveal">
-
-<a
+</p></div><div class="contact-grid"><div class="contact-info reveal"><a
 class="contact-card"
 href="https://github.com/NOOR-404"
 target="_blank"
@@ -2247,16 +2918,10 @@ rel="noopener">
 
 <div class="contact-icon">
 <i class="fa-brands fa-github"></i>
-</div>
-
-<div>
+</div><div>
 <small>GitHub</small>
 <strong>@NOOR-404</strong>
-</div>
-
-</a>
-
-<a
+</div></a><a
 class="contact-card"
 href="https://t.me/N_O_O_R_4_0_4"
 target="_blank"
@@ -2264,16 +2929,10 @@ rel="noopener">
 
 <div class="contact-icon">
 <i class="fa-brands fa-telegram"></i>
-</div>
-
-<div>
+</div><div>
 <small>Telegram</small>
 <strong>@N_O_O_R_4_0_4</strong>
-</div>
-
-</a>
-
-<a
+</div></a><a
 class="contact-card"
 href="https://www.facebook.com/WHO.IS.NOOR"
 target="_blank"
@@ -2281,16 +2940,10 @@ rel="noopener">
 
 <div class="contact-icon">
 <i class="fa-brands fa-facebook-f"></i>
-</div>
-
-<div>
+</div><div>
 <small>Facebook</small>
 <strong>Mohammad Noor</strong>
-</div>
-
-</a>
-
-<a
+</div></a><a
 class="contact-card"
 href="https://wa.me/8801925385443"
 target="_blank"
@@ -2298,16 +2951,10 @@ rel="noopener">
 
 <div class="contact-icon">
 <i class="fa-brands fa-whatsapp"></i>
-</div>
-
-<div>
+</div><div>
 <small>WhatsApp</small>
 <strong>WhatsApp</strong>
-</div>
-
-</a>
-
-<a
+</div></a><a
 class="contact-card"
 href="https://instagram.com/__n_o_o_r_4_0_4__"
 target="_blank"
@@ -2315,37 +2962,19 @@ rel="noopener">
 
 <div class="contact-icon">
 <i class="fa-brands fa-instagram"></i>
-</div>
-
-<div>
+</div><div>
 <small>Instagram</small>
 <strong>@__n_o_o_r_4_0_4__</strong>
-</div>
-
-</a>
-
-<a
+</div></a><a
 class="contact-card"
 href="mailto:daniyaln.hossai@gmail.com">
 
 <div class="contact-icon">
 <i class="fa-solid fa-envelope"></i>
-</div>
-
-<div>
+</div><div>
 <small>Email</small>
 <strong>daniyaln.hossai@gmail.com</strong>
-</div>
-
-</a>
-
-</div>
-
-<form class="contact-form reveal" id="contactForm">
-
-<div class="form-group">
-
-<label for="name">YOUR NAME</label>
+</div></a></div><form class="contact-form reveal" id="contactForm"><div class="form-group"><label for="name">YOUR NAME</label>
 
 <input
 type="text"
@@ -2353,11 +2982,7 @@ id="name"
 placeholder="Enter your name"
 required>
 
-</div>
-
-<div class="form-group">
-
-<label for="email">YOUR EMAIL</label>
+</div><div class="form-group"><label for="email">YOUR EMAIL</label>
 
 <input
 type="email"
@@ -2365,20 +2990,12 @@ id="email"
 placeholder="you@example.com"
 required>
 
-</div>
-
-<div class="form-group">
-
-<label for="message">MESSAGE</label>
+</div><div class="form-group"><label for="message">MESSAGE</label>
 
 <textarea
 id="message"
 placeholder="Write your message..."
-required></textarea>
-
-</div>
-
-<button
+required></textarea></div><button
 type="submit"
 class="btn btn-primary"
 style="width:100%;">
@@ -2386,34 +3003,12 @@ style="width:100%;">
 <i class="fa-solid fa-paper-plane"></i>
 Send Message
 
-</button>
-
-</form>
-
-</div>
-
-</div>
-
-</section>
-
-</main>
-
-<!-- FOOTER -->
-
-<footer>
-
-<div class="container">
-
-<div class="footer-inner">
-
-<div>
+</button></form></div></div></section></main><!-- =========================================================
+FOOTER
+========================================================= --><footer><div class="container"><div class="footer-inner"><div>
 © <span id="year"></span>
 NOOR-404. SYSTEM STATUS: ONLINE.
-</div>
-
-<div class="footer-social">
-
-<a
+</div><div class="footer-social"><a
 href="https://github.com/NOOR-404"
 target="_blank"
 rel="noopener">
@@ -2448,15 +3043,7 @@ rel="noopener">
 <i class="fa-brands fa-instagram"></i>
 </a>
 
-</div>
-
-</div>
-
-</div>
-
-</footer>
-
-<script>
+</div></div></div></footer><script>
 "use strict";
 
 /* =========================================================
@@ -2831,7 +3418,9 @@ const typingWords=[
 "modern APIs.",
 "developer tools.",
 "future-ready solutions.",
-"high-performance systems."
+"high-performance systems.",
+"creative digital experiences.",
+"practical developer utilities."
 ];
 
 let wordIndex=0;
@@ -2889,7 +3478,6 @@ typeText();
 
 /* =========================================================
 PROFILE 3D
-DESKTOP ONLY
 ========================================================= */
 
 const profileCard=
@@ -2931,6 +3519,140 @@ profileCard.addEventListener(
 
 profileCard.style.transform=
 "rotate(2deg)";
+
+}
+);
+
+}
+
+/* =========================================================
+TERMINAL (added)
+========================================================= */
+
+const terminalInput=
+document.getElementById("terminalInput");
+
+const terminalBody=
+document.getElementById("terminalBody");
+
+function terminalPrint(text){
+
+if(!terminalBody)return;
+
+const line=
+document.createElement("div");
+
+line.className="term-line";
+
+line.textContent=text;
+
+terminalBody.insertBefore(
+line,
+terminalBody.querySelector(".terminal-input")
+);
+
+}
+
+if(terminalInput){
+
+terminalInput.addEventListener(
+"keydown",
+event=>{
+
+if(event.key!=="Enter")return;
+
+const command=
+terminalInput.value
+.trim()
+.toLowerCase();
+
+if(!command)return;
+
+const entered=
+document.createElement("div");
+
+entered.className="term-line";
+
+entered.innerHTML=
+`<span class="term-prompt">noor404@dev-os:~$</span> ${escapeHTML(command)}`;
+
+terminalBody.insertBefore(
+entered,
+terminalBody.querySelector(".terminal-input")
+);
+
+terminalInput.value="";
+
+switch(command){
+
+case "help":
+
+terminalPrint(
+"Available: whoami / status / skills / about / github / clear"
+);
+
+break;
+
+case "whoami":
+
+terminalPrint(
+"NOOR-404 — Python Developer & Software Engineer"
+);
+
+break;
+
+case "status":
+
+terminalPrint(
+"SYSTEM ONLINE • BUILD MODE ACTIVE • CORE 404-X"
+);
+
+break;
+
+case "skills":
+
+terminalPrint(
+"Python • JavaScript • HTML • CSS • APIs • Automation • Git • Linux"
+);
+
+break;
+
+case "about":
+
+terminalPrint(
+"Building practical software, developer tools, automation and modern interfaces."
+);
+
+break;
+
+case "github":
+
+terminalPrint(
+"GITHUB: github.com/NOOR-404"
+);
+
+break;
+
+case "clear":
+
+document
+.querySelectorAll(
+"#terminalBody > .term-line"
+)
+.forEach(el=>el.remove());
+
+break;
+
+default:
+
+terminalPrint(
+`Command not found: ${command}. Type "help".`
+);
+
+}
+
+terminalBody.scrollTop=
+terminalBody.scrollHeight;
 
 }
 );
@@ -3366,11 +4088,6 @@ new Date().getFullYear();
 MOBILE ZOOM / BACK FIX
 ========================================================= */
 
-/*
-  Prevent double-tap zoom on the page.
-  Normal scrolling and clicking remain available.
-*/
-
 let lastTouchEnd=0;
 
 document.addEventListener(
@@ -3390,12 +4107,7 @@ lastTouchEnd=now;
 },
 {
 passive:false
-}
-);
-
-/*
-  Prevent pinch zoom.
-*/
+});
 
 document.addEventListener(
 "touchmove",
@@ -3410,13 +4122,7 @@ event.preventDefault();
 },
 {
 passive:false
-}
-);
-
-/*
-  If browser restores an old scroll/visual state
-  after Back/Forward navigation, normalize the page.
-*/
+});
 
 if("scrollRestoration" in history){
 
@@ -3433,31 +4139,9 @@ if(event.persisted){
 document.documentElement.style.zoom="1";
 document.body.style.zoom="1";
 
-window.scrollTo({
-top:0,
-left:0,
-behavior:"instant"
-});
-
-}
-
-}
-);
-
-/*
-  Make sure no previous zoom transform survives.
-*/
-
+window.scrollTo({top:0,left:0,behavior:"instant"});}});
 document.documentElement.style.zoom="1";
 document.body.style.zoom="1";
-
-/* =========================================================
-INIT
-========================================================= */
-
 loadGitHub();
-
-</script>
-
-</body>
+</script></body>
 </html>
