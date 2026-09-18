@@ -57,8 +57,7 @@ I am a dedicated **Python Developer** and **Automation Specialist** from Banglad
 | DEPARTMENT | SPECIALIZATION & CAPABILITIES |
 | :--- | :--- |
 | 🤖 **Automation** | Multi-threaded data scrapers, account management bots, and task schedulers. |
-| 🔬 **
-Reverse Engineering** | Binary analysis, code inspection, debugging, decompilation, and software behavior analysis. |
+| 🔬 **Reverse Engineering** | Binary analysis, code inspection, debugging, decompilation, and software behavior analysis. |
 | 🖥️ **Software Dev** | Creating efficient Python-based desktop tools and automated workflows. |
 | 🌐 **Web Backend** | Building scalable REST APIs and management panels using Flask. |
 | 📊 **Data Handling** | Processing complex JSON/XML data and database management. |
