@@ -18,7 +18,7 @@
 I am a dedicated **Python Developer** and **Automation Specialist** from Bangladesh. Operating under the handle **NOOR-404**, I focus on engineering robust software solutions and seamless web automations. My goal is to transform complex manual workflows into efficient, high-performance digital systems.
 
 - 🚀 **Current Focus:** Enterprise-grade automation dashboards and Flask backends.
-- ⚙️ **Key Expertise:** Web Scraping, API Integration, and Task Automation.
+- ⚙️ **Key Expertise:** Web Scraping, API Integration, and Task Automation, Reverse Engineering.
 - 💻 **Tech Stack:** Python 3.14, Flask, Selenium, and Requests.
 
 <p align="center">
